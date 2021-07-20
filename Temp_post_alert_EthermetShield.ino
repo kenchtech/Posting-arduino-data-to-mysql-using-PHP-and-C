@@ -1,5 +1,7 @@
 
-
+//Note the postData1 and postData2 are generating random values for the purpose of testing.
+//Visit kenchtech channel on youtube for more info
+//Created by Chinua
 #include <SPI.h>
 #include <Ethernet.h>
 
@@ -7,7 +9,7 @@
 
 // Enter a MAC address for your controller below.
 // Newer Ethernet shields have a MAC address printed on a sticker on the shield
-byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
+byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED }; 
 
 // if you don't want to use DNS (and reduce your sketch size)
 // use the numeric IP instead of the name for the server:
@@ -15,7 +17,7 @@ byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
 //char server[] = "www.google.com";    // name address for Google (using DNS)
 
 // Set the static IP address to use if the DHCP fails to assign
-IPAddress ip(192, 168, 88, 253);
+IPAddress ip(192, 168, 88, 253); //static IP for the ethernet shield
 //IPAddress myDns(192, 168, 1, 1);
 
 // Initialize the Ethernet client library
@@ -24,7 +26,7 @@ IPAddress ip(192, 168, 88, 253);
 EthernetClient client;
 //int status = WL_IDLE_STATUS;
 
-char server[] = "192.168.88.254"; //My IOT VM on virtualbox
+char server[] = "192.168.88.254"; //My IOT VM on virtualbox or system IP hosting WAMP server
 
 String postData;
 String postVariable = "temp=";
