@@ -97,20 +97,8 @@ if (temperatureF >= 80){
     client.println(review.length());
     client.println();
     client.print(review);
-    //client.print(postData2);
-    
-    //client.print("Content-Length: ");
-    //client.println((postData2+postData2).length());
-   // client.println();
-   // client.print(postData2);
     delay (500);
-   // client.println("POST /test/emailScript.php HTTP/1.1");
-    //client.println("Host: 192.168.88.254");
-    //client.println("Content-Type: application/x-www-form-urlencoded");
-   // client.print("Content-Length: ");
-    //client.println(postData2.length());
-    //client.println();
-   // client.print(postData2);
+   
     delay (500);
     Serial.println("Email Sent");
     Serial.println(postData);
